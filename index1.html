@@ -1,0 +1,143 @@
+<html>
+<head>
+    <title>Home Page</title>
+
+<style>
+
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    header{
+        position:absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 200px;
+    }
+
+    header .brand{
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+
+    header .navigation-items a{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+    section{
+        padding: 100px 200px;
+    }
+	
+    .home{
+        min-height: 100vh;
+        justify-content: center;
+        background-image: url(./IMAGE/desk4.jpg);
+        background-size: 100% 100%;
+    }
+	
+    .home .content{
+        color: #fff;
+        width: 70%;
+        margin-top: 50px;
+    }
+	
+    .home .content h1{
+        font-size: 4em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+    }
+	
+    .home .content h1 span{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+	
+    .home .content p{
+        margin-bottom: 35px;
+    }
+	
+    .home .content a{
+        background: #fff;
+        padding: 15px 35px;
+        color: blue;
+        font-size: 1.1em;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 2px;
+    }
+   
+    .maindiv{
+        width: 70%;
+        height: 400px;
+        position: absolute; 
+        background-image: url(./IMAGE/desk4.jpg);
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px white;
+        animation: slider 100s infinite linear;
+    }
+	
+    @keyframes slider{
+        0%{background-image: url(./IMAGE/desk2.jpg);}
+		
+        20%{background-image: url(./IMAGE/desk4.jpg);}
+		
+        25%{background-image: url(./IMAGE/desk6.jpg);}
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <header>
+	
+       <p class="brand"> <u> RESUME</u></p>
+	   
+        <div class="navigation">
+            <div class="navigation-items">
+			
+                <a href="#"> Home </a>
+                <a href="AboutMe.html">About me </a>
+                <a href="Documents.html">All Documents</a>
+                <a href="qualification.html">Educational details </a>
+                <a href="contact.html">Contact</a>
+				
+            </div>
+			
+        </div>
+		
+    </header>
+
+   <section class="home">
+   
+     <div class="maindiv">
+
+        <div class="content">
+		
+            <h1>Akriti<br> <span> Raj Matho</span> </h1>
+			
+            <p>This is Akriti Raj .I am a student of BCA(Bachlor of Computer Application).Recently I am studying in Vinayak Vidypeeth Collage gaya </p>
+            <a href="AboutMe.html">Read More</a>
+        </div>
+		
+    </div>
+	
+    </section>
+       
+</body>
+</html>
